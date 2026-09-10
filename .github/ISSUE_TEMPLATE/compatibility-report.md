@@ -2,7 +2,7 @@
 name: JNB compatibility report / JNB 兼容性报告
 about: Report a JNB that fails, warns unexpectedly, or recovers incorrectly / 报告失败、异常警告或疑似恢复错误的 JNB
 title: "[Compatibility] "
-labels: ""
+labels: "compatibility, needs-fixture"
 assignees: ""
 ---
 
