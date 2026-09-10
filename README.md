@@ -1,14 +1,20 @@
 # JNB Recover
 
+[![Release](https://img.shields.io/github/v/release/edwardsage419/jnb-recover?label=release)](https://github.com/edwardsage419/jnb-recover/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform: iPhone/iPad](https://img.shields.io/badge/platform-iPhone%20%7C%20iPad-lightgrey)](#iphone-use)
+
 Recover scientific worksheet data from SigmaPlot `.JNB` files without SigmaPlot.
 
-JNB Recover is a local, offline, read-only recovery tool focused on extracting scientific worksheet data trapped in proprietary SigmaPlot notebook files and exporting it to open formats such as CSV and JSON.
+JNB Recover is a local, offline, read-only scientific data recovery and interoperability tool focused on extracting worksheet data trapped in proprietary SigmaPlot notebook files and exporting it to open formats such as CSV and JSON.
+
+Use cases include recovering legacy experimental data, migrating archived SigmaPlot worksheets, auditing old scientific notebooks, and converting accessible worksheet content into open tabular formats.
 
 ## Current release
 
-MVP 0.5.2
+**MVP 0.5.2** · [Download the latest release](https://github.com/edwardsage419/jnb-recover/releases/latest)
 
-The current iPhone workflow is a single Python file designed for Pyto. It uses the native iOS Files picker, performs recovery locally, and writes one CSV per recovered worksheet plus `recovery_manifest.json`.
+The current iPhone and iPad workflow is a single Python file designed for Pyto. It uses the native iOS Files picker, performs recovery locally, and writes one CSV per recovered worksheet plus `recovery_manifest.json`.
 
 The embedded recovery engine is frozen at version 0.3.0.
 
@@ -44,17 +50,24 @@ Current evidence includes independent comparison across public SigmaPlot fixture
 * SigmaPlot 14: 12 of 12 tested JNB files recovered, with 870 numeric and 10 text or group cells independently cross-checked
 * SigmaPlot 7 legacy `Samples.jnb`: recovered on a real iPhone with 13 worksheets and 524 ambiguous cells conservatively reported as a scientific warning
 
-See `docs/VALIDATION.md` and `docs/SCIENTIFIC_LIMITS.md` for the frozen evidence and boundaries.
+See [`docs/VALIDATION.md`](docs/VALIDATION.md) and [`docs/SCIENTIFIC_LIMITS.md`](docs/SCIENTIFIC_LIMITS.md) for the frozen evidence and boundaries.
 
 ## iPhone use
 
 1. Install Pyto on the iPhone or iPad.
-2. Open `JNB_Recover_iPhone_0_5_2.py` in Pyto.
-3. Run the script.
-4. Select a `.JNB` file in the iOS Files picker.
-5. The tool writes a non-overwriting recovery folder under Pyto Documents.
+2. Download `JNB_Recover_iPhone_0_5_2.py` from the [latest GitHub Release](https://github.com/edwardsage419/jnb-recover/releases/latest).
+3. Open the file in Pyto.
+4. Run the script.
+5. Select a `.JNB` file in the iOS Files picker.
+6. The tool writes a non-overwriting recovery folder under Pyto Documents.
 
 Possible result states are `RECOVERED`, `RECOVERED WITH SCIENTIFIC WARNING`, `FAILED`, and `CANCELLED`.
+
+## Compatibility reports
+
+If a JNB fails, warns unexpectedly, or appears to recover incorrectly, [open a compatibility report](https://github.com/edwardsage419/jnb-recover/issues/new?template=compatibility-report.md). Independent CSV or XLSX ground truth is especially valuable.
+
+Do not upload confidential, proprietary, personal, or restricted JNB files. A minimal synthetic or publicly redistributable fixture is preferred.
 
 ## Product boundaries
 
@@ -64,10 +77,14 @@ This project currently does not write JNB files, clone SigmaPlot, render complet
 
 Recovery is local and offline. No server, paid API, SigmaPlot installation, Origin installation, or cloud AI service is required for recovery.
 
+## Project metadata
+
+Software citation metadata is available in [`CITATION.cff`](CITATION.cff). Contribution rules are in [`CONTRIBUTING.md`](CONTRIBUTING.md), security guidance in [`SECURITY.md`](SECURITY.md), and project independence and trademark guidance in [`TRADEMARKS.md`](TRADEMARKS.md).
+
 ## Status
 
 MVP 0.5.2 is the accepted current release. Parser semantics are frozen until new fixture evidence demonstrates a specific error or unsupported serialization variant.
 
 ## License
 
-MIT License. See `LICENSE`.
+MIT License. See [`LICENSE`](LICENSE).
