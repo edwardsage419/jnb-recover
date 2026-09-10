@@ -52,7 +52,7 @@ CSV 用于开放表格数据交换。`recovery_manifest.json` 是 provenance、�
 * SigmaPlot 14：12 个测试 JNB 全部恢复，870 个数值单元格和 10 个文本或 group 单元格与源 XLSX 交叉验证
 * SigmaPlot 7 legacy `Samples.jnb`：真实 iPhone 上恢复 13 个工作表，并保守报告 524 个 ambiguous cells
 
-详细证据和边界见 [`docs/VALIDATION.md`](docs/VALIDATION.md) 和 [`docs/SCIENTIFIC_LIMITS.md`](docs/SCIENTIFIC_LIMITS.md)。
+详细证据和边界见 [`docs/VALIDATION.zh-CN.md`](docs/VALIDATION.zh-CN.md) 和 [`docs/SCIENTIFIC_LIMITS.zh-CN.md`](docs/SCIENTIFIC_LIMITS.zh-CN.md)。英文原文见 [`docs/VALIDATION.md`](docs/VALIDATION.md) 和 [`docs/SCIENTIFIC_LIMITS.md`](docs/SCIENTIFIC_LIMITS.md)。
 
 ## iPhone 和 iPad 使用方法
 
@@ -71,6 +71,8 @@ CSV 用于开放表格数据交换。`recovery_manifest.json` 是 provenance、�
 
 请勿上传机密、专有、个人或受限制的 JNB 文件。优先使用最小化 synthetic fixture 或明确允许公开再分发的 fixture。
 
+一般使用帮助见 [`SUPPORT.md`](SUPPORT.md)。
+
 ## 产品边界
 
 当前项目不写入 JNB，不复刻 SigmaPlot，不完整渲染图形，不执行宏，不重建完整统计报告，也不声称掌握完整 JNB 文件格式规范。
@@ -81,7 +83,7 @@ CSV 用于开放表格数据交换。`recovery_manifest.json` 是 provenance、�
 
 ## 项目资料
 
-软件引用元数据见 [`CITATION.cff`](CITATION.cff)。贡献规则见 [`CONTRIBUTING.md`](CONTRIBUTING.md)，安全说明见 [`SECURITY.md`](SECURITY.md)，项目独立性与商标说明见 [`TRADEMARKS.md`](TRADEMARKS.md)，用户支持说明见 [`SUPPORT.md`](SUPPORT.md)。
+软件引用元数据见 [`CITATION.cff`](CITATION.cff)。贡献规则见 [`CONTRIBUTING.md`](CONTRIBUTING.md)，安全说明见 [`SECURITY.md`](SECURITY.md)，项目独立性与商标说明见 [`TRADEMARKS.md`](TRADEMARKS.md)，用户支持说明见 [`SUPPORT.md`](SUPPORT.md)，仓库设置建议见 [`docs/REPOSITORY_SETUP.md`](docs/REPOSITORY_SETUP.md)。
 
 ## 状态
 
@@ -89,4 +91,4 @@ MVP 0.5.2 是当前已验收版本。除非新 fixture 证据证明具体错误�
 
 ## 许可证
 
-MIT License，见 [`LICENSE`](LICENSE)。
+正式许可证以英文 [`LICENSE`](LICENSE) 为准。中文阅读参考见 [`LICENSE.zh-CN.md`](LICENSE.zh-CN.md)。
