@@ -91,4 +91,4 @@ MVP 0.5.2 is the accepted current release. Parser semantics are frozen until new
 
 ## License
 
-MIT License. See [`LICENSE`](LICENSE).
+MIT License. See the authoritative English [`LICENSE`](LICENSE). An unofficial Simplified Chinese reference translation is available in [`LICENSE.zh-CN.md`](LICENSE.zh-CN.md).
