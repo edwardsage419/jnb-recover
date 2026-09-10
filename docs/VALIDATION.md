@@ -1,5 +1,7 @@
 # Validation Record
 
+**English** | [简体中文](VALIDATION.zh-CN.md)
+
 Current accepted release: MVP 0.5.2
 
 Recovery engine: 0.3.0
