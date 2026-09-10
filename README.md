@@ -26,6 +26,13 @@ Engine SHA 256:
 
 Validated iPhone result paths include normal recovery, scientific warning recovery, corrupted input rejection, and user cancellation.
 
+## Quick documentation
+
+* [Usage guide](docs/USAGE.md) · [简体中文](docs/USAGE.zh-CN.md)
+* [Troubleshooting](docs/TROUBLESHOOTING.md) · [简体中文](docs/TROUBLESHOOTING.zh-CN.md)
+* [Validation record](docs/VALIDATION.md) · [简体中文](docs/VALIDATION.zh-CN.md)
+* [Scientific limits](docs/SCIENTIFIC_LIMITS.md) · [简体中文](docs/SCIENTIFIC_LIMITS.zh-CN.md)
+
 ## Scientific scope
 
 Priority support covers numeric worksheet values, text cells, column names, row and column structure, missing-like states, and provenance.
@@ -64,6 +71,8 @@ See [`docs/VALIDATION.md`](docs/VALIDATION.md) and [`docs/SCIENTIFIC_LIMITS.md`]
 6. The tool writes a non-overwriting recovery folder under Pyto Documents.
 
 Possible result states are `RECOVERED`, `RECOVERED WITH SCIENTIFIC WARNING`, `FAILED`, and `CANCELLED`.
+
+For detailed steps, see [`docs/USAGE.md`](docs/USAGE.md). For common problems, see [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md).
 
 ## Compatibility reports
 
