@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use JNB Recover in scientific or technical work, please cite the software and the specific release used."
+title: "JNB Recover"
+type: software
+authors:
+  - family-names: "Sage"
+    given-names: "Edward"
+    alias: "EdwardSage"
+repository-code: "https://github.com/edwardsage419/jnb-recover"
+url: "https://github.com/edwardsage419/jnb-recover"
+version: "0.5.2"
+date-released: "2026-09-10"
+license: MIT
+keywords:
+  - SigmaPlot
+  - JNB
+  - scientific-data-recovery
+  - data-recovery
+  - interoperability
+  - CSV
+  - JSON
+  - scientific-software
