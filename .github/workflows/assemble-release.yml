@@ -1,0 +1,39 @@
+name: Assemble accepted release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'payload16/**'
+      - '.github/workflows/assemble-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Assemble and verify accepted script
+        shell: bash
+        run: |
+          cat payload16/part*.b64 | base64 --decode > JNB_Recover_iPhone_0_5_2.py
+          echo "d4634214d80fcaf73cc3f901a62e6eb059d86734b9450370f916ec562ca2880c  JNB_Recover_iPhone_0_5_2.py" | sha256sum -c -
+          python -m py_compile JNB_Recover_iPhone_0_5_2.py
+
+      - name: Commit assembled release
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add JNB_Recover_iPhone_0_5_2.py
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "release: publish accepted iPhone MVP 0.5.2"
+          git push
