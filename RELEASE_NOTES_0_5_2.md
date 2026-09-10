@@ -1,5 +1,7 @@
 # JNB Recover 0.5.2
 
+**English** | [简体中文](RELEASE_NOTES_0_5_2.zh-CN.md)
+
 First accepted public MVP for local, offline SigmaPlot JNB worksheet-data recovery.
 
 ## Highlights
