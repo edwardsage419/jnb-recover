@@ -1,5 +1,7 @@
 # JNB Recover
 
+English | [简体中文](README.zh-CN.md)
+
 [![Release](https://img.shields.io/github/v/release/edwardsage419/jnb-recover?label=release)](https://github.com/edwardsage419/jnb-recover/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform: iPhone/iPad](https://img.shields.io/badge/platform-iPhone%20%7C%20iPad-lightgrey)](#iphone-use)
@@ -69,6 +71,8 @@ If a JNB fails, warns unexpectedly, or appears to recover incorrectly, [open a c
 
 Do not upload confidential, proprietary, personal, or restricted JNB files. A minimal synthetic or publicly redistributable fixture is preferred.
 
+For general help, see [`SUPPORT.md`](SUPPORT.md).
+
 ## Product boundaries
 
 This project currently does not write JNB files, clone SigmaPlot, render complete graphs, execute macros, rebuild complete statistical reports, or claim a complete JNB file-format specification.
@@ -79,7 +83,7 @@ Recovery is local and offline. No server, paid API, SigmaPlot installation, Orig
 
 ## Project metadata
 
-Software citation metadata is available in [`CITATION.cff`](CITATION.cff). Contribution rules are in [`CONTRIBUTING.md`](CONTRIBUTING.md), security guidance in [`SECURITY.md`](SECURITY.md), and project independence and trademark guidance in [`TRADEMARKS.md`](TRADEMARKS.md).
+Software citation metadata is available in [`CITATION.cff`](CITATION.cff). Contribution rules are in [`CONTRIBUTING.md`](CONTRIBUTING.md), security guidance in [`SECURITY.md`](SECURITY.md), project independence and trademark guidance in [`TRADEMARKS.md`](TRADEMARKS.md), and repository setup guidance in [`docs/REPOSITORY_SETUP.md`](docs/REPOSITORY_SETUP.md).
 
 ## Status
 
