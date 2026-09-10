@@ -2,6 +2,7 @@
 
 [English](README.md) | 简体中文
 
+[![Integrity CI](https://github.com/edwardsage419/jnb-recover/actions/workflows/ci.yml/badge.svg)](https://github.com/edwardsage419/jnb-recover/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/edwardsage419/jnb-recover?label=release)](https://github.com/edwardsage419/jnb-recover/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform: iPhone/iPad](https://img.shields.io/badge/platform-iPhone%20%7C%20iPad-lightgrey)](#iphone-和-ipad-使用方法)
@@ -14,7 +15,11 @@ JNB Recover 是一个本地、离线、只读的科研数据恢复和互操作�
 
 ## 当前版本
 
-**MVP 0.5.2** · [下载最新 Release](https://github.com/edwardsage419/jnb-recover/releases/latest)
+**MVP 0.5.2** · [直接下载](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py) · [Release 页面](https://github.com/edwardsage419/jnb-recover/releases/tag/v0.5.2)
+
+已验收脚本 SHA 256：
+
+`d4634214d80fcaf73cc3f901a62e6eb059d86734b9450370f916ec562ca2880c`
 
 当前 iPhone 和 iPad 工作流使用一个适配 Pyto 的单文件 Python 脚本。脚本调用 iOS 原生 Files 文件选择器，在本机执行恢复，并为每个工作表写出一个 CSV，同时生成 `recovery_manifest.json`。
 
@@ -64,7 +69,7 @@ CSV 用于开放表格数据交换。`recovery_manifest.json` 是 provenance、�
 ## iPhone 和 iPad 使用方法
 
 1. 在 iPhone 或 iPad 安装 Pyto。
-2. 从 [最新 GitHub Release](https://github.com/edwardsage419/jnb-recover/releases/latest) 下载 `JNB_Recover_iPhone_0_5_2.py`。
+2. 直接下载 [`JNB_Recover_iPhone_0_5_2.py`](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py)。
 3. 在 Pyto 中打开该文件。
 4. 运行脚本。
 5. 在 iOS Files 文件选择器中选择 `.JNB` 文件。
@@ -92,7 +97,7 @@ CSV 用于开放表格数据交换。`recovery_manifest.json` 是 provenance、�
 
 ## 项目资料
 
-软件引用元数据见 [`CITATION.cff`](CITATION.cff)。贡献规则见 [`CONTRIBUTING.md`](CONTRIBUTING.md)，安全说明见 [`SECURITY.md`](SECURITY.md)，项目独立性与商标说明见 [`TRADEMARKS.md`](TRADEMARKS.md)，用户支持说明见 [`SUPPORT.md`](SUPPORT.md)，仓库设置建议见 [`docs/REPOSITORY_SETUP.md`](docs/REPOSITORY_SETUP.md)。
+软件引用元数据见 [`CITATION.cff`](CITATION.cff)。贡献规则见 [`CONTRIBUTING.md`](CONTRIBUTING.md)，安全说明见 [`SECURITY.md`](SECURITY.md)，项目独立性与商标说明见 [`TRADEMARKS.md`](TRADEMARKS.md)，用户支持说明见 [`SUPPORT.md`](SUPPORT.md)，仓库设置建议见 [`docs/REPOSITORY_SETUP.md`](docs/REPOSITORY_SETUP.md)，公开发现性建议见 [`docs/DISCOVERABILITY.md`](docs/DISCOVERABILITY.md)。
 
 ## 状态
 
