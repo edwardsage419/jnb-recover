@@ -1,5 +1,7 @@
 # Scientific and Product Limits
 
+**English** | [简体中文](SCIENTIFIC_LIMITS.zh-CN.md)
+
 ## Missing-value semantics
 
 Some SigmaPlot cell states remain intentionally unresolved at the binary-specification level.
