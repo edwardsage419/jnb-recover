@@ -2,6 +2,7 @@
 
 English | [简体中文](README.zh-CN.md)
 
+[![Integrity CI](https://github.com/edwardsage419/jnb-recover/actions/workflows/ci.yml/badge.svg)](https://github.com/edwardsage419/jnb-recover/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/edwardsage419/jnb-recover?label=release)](https://github.com/edwardsage419/jnb-recover/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform: iPhone/iPad](https://img.shields.io/badge/platform-iPhone%20%7C%20iPad-lightgrey)](#iphone-use)
@@ -14,7 +15,11 @@ Use cases include recovering legacy experimental data, migrating archived SigmaP
 
 ## Current release
 
-**MVP 0.5.2** · [Download the latest release](https://github.com/edwardsage419/jnb-recover/releases/latest)
+**MVP 0.5.2** · [Direct download](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py) · [Release notes](https://github.com/edwardsage419/jnb-recover/releases/tag/v0.5.2)
+
+Accepted script SHA 256:
+
+`d4634214d80fcaf73cc3f901a62e6eb059d86734b9450370f916ec562ca2880c`
 
 The current iPhone and iPad workflow is a single Python file designed for Pyto. It uses the native iOS Files picker, performs recovery locally, and writes one CSV per recovered worksheet plus `recovery_manifest.json`.
 
@@ -64,7 +69,7 @@ See [`docs/VALIDATION.md`](docs/VALIDATION.md) and [`docs/SCIENTIFIC_LIMITS.md`]
 ## iPhone use
 
 1. Install Pyto on the iPhone or iPad.
-2. Download `JNB_Recover_iPhone_0_5_2.py` from the [latest GitHub Release](https://github.com/edwardsage419/jnb-recover/releases/latest).
+2. Download [`JNB_Recover_iPhone_0_5_2.py`](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py).
 3. Open the file in Pyto.
 4. Run the script.
 5. Select a `.JNB` file in the iOS Files picker.
@@ -92,7 +97,7 @@ Recovery is local and offline. No server, paid API, SigmaPlot installation, Orig
 
 ## Project metadata
 
-Software citation metadata is available in [`CITATION.cff`](CITATION.cff). Contribution rules are in [`CONTRIBUTING.md`](CONTRIBUTING.md), security guidance in [`SECURITY.md`](SECURITY.md), project independence and trademark guidance in [`TRADEMARKS.md`](TRADEMARKS.md), and repository setup guidance in [`docs/REPOSITORY_SETUP.md`](docs/REPOSITORY_SETUP.md).
+Software citation metadata is available in [`CITATION.cff`](CITATION.cff). Contribution rules are in [`CONTRIBUTING.md`](CONTRIBUTING.md), security guidance in [`SECURITY.md`](SECURITY.md), project independence and trademark guidance in [`TRADEMARKS.md`](TRADEMARKS.md), repository setup guidance in [`docs/REPOSITORY_SETUP.md`](docs/REPOSITORY_SETUP.md), and discoverability guidance in [`docs/DISCOVERABILITY.md`](docs/DISCOVERABILITY.md).
 
 ## Status
 
