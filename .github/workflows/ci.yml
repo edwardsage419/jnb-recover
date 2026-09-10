@@ -1,0 +1,66 @@
+name: Integrity CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Python syntax
+        run: python -m py_compile JNB_Recover_iPhone_0_5_2.py
+
+      - name: Verify frozen release metadata and embedded engine
+        shell: bash
+        run: |
+          python - <<'PY'
+          import ast
+          import hashlib
+          from pathlib import Path
+
+          path = Path('JNB_Recover_iPhone_0_5_2.py')
+          raw = path.read_bytes()
+          expected_script = 'd4634214d80fcaf73cc3f901a62e6eb059d86734b9450370f916ec562ca2880c'
+          actual_script = hashlib.sha256(raw).hexdigest()
+          if actual_script != expected_script:
+              raise SystemExit(f'script SHA 256 mismatch: {actual_script}')
+
+          tree = ast.parse(raw.decode('utf-8'))
+          values = {}
+          wanted = {
+              'WORKFLOW_VERSION',
+              'REQUIRED_ENGINE_VERSION',
+              'FROZEN_ENGINE_SHA256',
+              'FROZEN_ENGINE_SOURCE',
+          }
+          for node in tree.body:
+              if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
+                  name = node.targets[0].id
+                  if name in wanted:
+                      values[name] = ast.literal_eval(node.value)
+
+          if values.get('WORKFLOW_VERSION') != '0.5.2':
+              raise SystemExit('workflow version mismatch')
+          if values.get('REQUIRED_ENGINE_VERSION') != '0.3.0':
+              raise SystemExit('engine version mismatch')
+
+          engine_source = values.get('FROZEN_ENGINE_SOURCE')
+          declared_engine_sha = values.get('FROZEN_ENGINE_SHA256')
+          actual_engine_sha = hashlib.sha256(engine_source.encode('utf-8')).hexdigest()
+          if actual_engine_sha != declared_engine_sha:
+              raise SystemExit(f'embedded engine SHA 256 mismatch: {actual_engine_sha}')
+          if actual_engine_sha != '7ae046dc62b5ace46061bc9b7b6c33d4179036a48ac8adfecf4cea7547d45c40':
+              raise SystemExit('embedded engine differs from accepted 0.3.0 engine')
+
+          print('Accepted script SHA 256:', actual_script)
+          print('Embedded engine SHA 256:', actual_engine_sha)
+          print('Integrity CI: PASS')
+          PY
