@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Support guide / 使用与支持说明"
+    url: "https://github.com/edwardsage419/jnb-recover/blob/main/SUPPORT.md"
+    about: "Read support guidance before filing an issue / 提交 Issue 前请先阅读支持说明"
+  - name: "Security policy / 安全问题说明"
+    url: "https://github.com/edwardsage419/jnb-recover/blob/main/SECURITY.md"
+    about: "Do not publish sensitive security or scientific data in a public issue / 请勿在公开 Issue 中发布敏感安全信息或科研数据"
