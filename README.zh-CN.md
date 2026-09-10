@@ -26,6 +26,13 @@ JNB Recover 是一个本地、离线、只读的科研数据恢复和互操作�
 
 已经在真实 iPhone 上验证正常恢复、科学警告恢复、损坏输入拒绝和用户取消四条路径。
 
+## 快速文档
+
+* [使用指南](docs/USAGE.zh-CN.md) · [English](docs/USAGE.md)
+* [故障排查](docs/TROUBLESHOOTING.zh-CN.md) · [English](docs/TROUBLESHOOTING.md)
+* [验证记录](docs/VALIDATION.zh-CN.md) · [English](docs/VALIDATION.md)
+* [科学边界](docs/SCIENTIFIC_LIMITS.zh-CN.md) · [English](docs/SCIENTIFIC_LIMITS.md)
+
 ## 科学范围
 
 优先支持数值工作表、文本单元格、列名、行列结构、类似缺失值的状态以及 provenance 信息。
@@ -64,6 +71,8 @@ CSV 用于开放表格数据交换。`recovery_manifest.json` 是 provenance、�
 6. 工具会在 Pyto Documents 下创建不会覆盖旧结果的恢复目录。
 
 可能的结果状态包括 `RECOVERED`、`RECOVERED WITH SCIENTIFIC WARNING`、`FAILED` 和 `CANCELLED`。
+
+详细步骤见 [`docs/USAGE.zh-CN.md`](docs/USAGE.zh-CN.md)。常见问题见 [`docs/TROUBLESHOOTING.zh-CN.md`](docs/TROUBLESHOOTING.zh-CN.md)。
 
 ## 兼容性反馈
 
