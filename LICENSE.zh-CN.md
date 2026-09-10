@@ -1,0 +1,17 @@
+# MIT License 简体中文参考译文
+
+本文件仅供中文阅读参考。发生解释差异时，以仓库根目录中的英文 `LICENSE` 为准。
+
+MIT 许可证
+
+版权所有 © 2026 EdwardSage
+
+特此免费授予任何获得本软件及相关文档文件（以下简称“软件”）副本的人不受限制地处理本软件的权利，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或销售本软件副本的权利，并允许获得本软件的人在遵守以下条件的前提下这样做：
+
+上述版权声明和本许可声明应包含在本软件的所有副本或主要部分中。
+
+本软件按“原样”提供，不提供任何形式的明示或默示保证，包括但不限于适销性、特定用途适用性和不侵权保证。在任何情况下，作者或版权持有人均不对因本软件或本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任承担责任，无论该责任基于合同、侵权行为或其他原因。
+
+## English authority
+
+This Chinese translation is provided for reading convenience only. The English `LICENSE` file in the repository root is the authoritative license text.
