@@ -15,7 +15,7 @@ JNB Recover 是一个本地、离线、只读的科研数据恢复和互操作�
 
 ## 当前版本
 
-**MVP 0.5.2** · [直接下载](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py) · [Release 页面](https://github.com/edwardsage419/jnb-recover/releases/tag/v0.5.2)
+**MVP 0.5.2** · [直接下载](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py) · [GitHub Release](https://github.com/edwardsage419/jnb-recover/releases/tag/v0.5.2) · [中文发布说明](RELEASE_NOTES_0_5_2.zh-CN.md) · [English](RELEASE_NOTES_0_5_2.md)
 
 已验收脚本 SHA 256：
 
@@ -32,6 +32,8 @@ JNB Recover 是一个本地、离线、只读的科研数据恢复和互操作�
 已经在真实 iPhone 上验证正常恢复、科学警告恢复、损坏输入拒绝和用户取消四条路径。
 
 ## 快速文档
+
+[文档索引 / Documentation index](docs/README.md)
 
 * [使用指南](docs/USAGE.zh-CN.md) · [English](docs/USAGE.md)
 * [故障排查](docs/TROUBLESHOOTING.zh-CN.md) · [English](docs/TROUBLESHOOTING.md)
