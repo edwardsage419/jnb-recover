@@ -15,7 +15,7 @@ Use cases include recovering legacy experimental data, migrating archived SigmaP
 
 ## Current release
 
-**MVP 0.5.2** · [Direct download](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py) · [Release notes](https://github.com/edwardsage419/jnb-recover/releases/tag/v0.5.2)
+**MVP 0.5.2** · [Direct download](https://github.com/edwardsage419/jnb-recover/releases/download/v0.5.2/JNB_Recover_iPhone_0_5_2.py) · [GitHub Release](https://github.com/edwardsage419/jnb-recover/releases/tag/v0.5.2) · [English release notes](RELEASE_NOTES_0_5_2.md) · [简体中文](RELEASE_NOTES_0_5_2.zh-CN.md)
 
 Accepted script SHA 256:
 
@@ -32,6 +32,8 @@ Engine SHA 256:
 Validated iPhone result paths include normal recovery, scientific warning recovery, corrupted input rejection, and user cancellation.
 
 ## Quick documentation
+
+[Documentation index / 文档索引](docs/README.md)
 
 * [Usage guide](docs/USAGE.md) · [简体中文](docs/USAGE.zh-CN.md)
 * [Troubleshooting](docs/TROUBLESHOOTING.md) · [简体中文](docs/TROUBLESHOOTING.zh-CN.md)
